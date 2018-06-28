@@ -56,26 +56,24 @@
 		onclick="display='block'">Profile <i ></i>
 	</a> 
 	<div id="myBtn" href="javascript:void(0)" onclick="myFunc()">
-	<a href="javascript:void(0)"
-		class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
-		onclick="openMail('Jane');w3_close();">
-		<div class="w3-container">
-			<span class="w3-opacity w3-large">ตารางสอน</span>
-
-		</div>
-	</a> <a href="javascript:void(0)"
+		<a href="javascript:void(0)"
 		class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
 		onclick="openMail('teaching');w3_close();">
 		<div class="w3-container">
 			<span class="w3-opacity w3-large">เบิกค่าสอน</span>
-
 		</div>
-	</a> <a href="javascript:void(0)"
+	</a>
+		<a href="javascript:void(0)"
+		class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
+		onclick="openMail('Jane');w3_close();">
+		<div class="w3-container">
+			<span class="w3-opacity w3-large">ตารางสอน</span>
+		</div>
+	</a>  <a href="javascript:void(0)"
 		class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
 		onclick="openMail('Teacher');w3_close();">
 		<div class="w3-container">
 			<span class="w3-opacity w3-large">ข้อมูลผู้ใช้</span>
-
 		</div>
 	</a>
 </div>

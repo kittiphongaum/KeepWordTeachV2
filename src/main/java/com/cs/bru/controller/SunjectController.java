@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cs.bru.dao.SubjectDAO;
 import com.cs.bru.model.SubjectBean;
+import com.cs.bru.model.SubjectSimpleBean;
+import com.cs.bru.model.Subjectsach;
 
 @RestController
 public class SunjectController {
@@ -25,8 +27,15 @@ public class SunjectController {
 	public List<SubjectBean> getResource() {
 		List<SubjectBean> list = new ArrayList<>();
 		list = subjectDAO.findAll();
-		
 		return list;
+	}
+	@RequestMapping(value = "/subject", method = RequestMethod.POST)
+	public SubjectBean  SubjectAdd(@RequestBody Subjectsach  subjectsach ) {
+		SubjectBean Subject = new SubjectBean();
+		Subject = subjectDAO.findOne(subjectsach.getSubjectsach());
+//		System.out.println(Subject);
+//		System.out.println(subjectsach.getSubjectsach());
+		return Subject;
 	}
 	
 	// insert

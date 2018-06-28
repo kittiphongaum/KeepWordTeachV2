@@ -7,17 +7,22 @@ public class SubjectBean {
 	private String section;
 	private String credit;
 	private String creditHour;
+	private int tudsadee;
+	private int prtibad;
+	
 	
 	public SubjectBean() {
 		super();
 	}
-	public SubjectBean(String subjectID,String subjectName,String section,String credit,String creditHour) {
+	public SubjectBean(String subjectID,String subjectName,String section,String credit,String creditHour,String student,int tudsadee,int prtibad) {
 		super();
 		this.subjectID=subjectID;
 		this.subjectName=subjectName;
 		this.section=section;
 		this.credit=credit;
 		this.creditHour=creditHour;
+		this.tudsadee=tudsadee;
+		this.prtibad=prtibad;
 		
 	}
 	public int getSubID() {
@@ -56,5 +61,18 @@ public class SubjectBean {
 	public void setCreditHour(String creditHour) {
 		this.creditHour = creditHour;
 	}
+	public int getTudsadee() {
+		return tudsadee;
+	}
+	public void setTudsadee(int tudsadee) {
+		this.tudsadee = tudsadee;
+	}
+	public int getPrtibad() {
+		return prtibad;
+	}
+	public void setPrtibad(int prtibad) {
+		this.prtibad = prtibad;
+	}
+
 	
 }
